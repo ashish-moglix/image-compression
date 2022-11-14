@@ -1,0 +1,22 @@
+<form method="post" action="/" enctype="multipart/form-data">
+    File: <input type="file" id="originalFile" name="file"/> <br/>
+    Quantity: <input type="text" name="quality" value="30"/><br/>
+    Blur Factor: <input type="text" name="gsblur" value="0.05"/><br/>
+    Color Space: <input type="text" name="colorspace" readonly value="RGB">
+    <input type="submit" value="Compress" />
+</form>
+
+<br/>
+<a  href="{{filename}}" target="_blank">Download Compressed File</a><br/>
+
+
+Original Image: <img id="original" src="{{original_file}}" ></img><br/>
+Compressed Image: <img id="compressed" src="{{filename}}" ></img><br/>
+
+
+
+<br/>
+<br/>
+"Server Response: " {{msg}} <br/>
+
+"File Uploaded: " {{filename}} <br/>
